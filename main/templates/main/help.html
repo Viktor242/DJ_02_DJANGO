@@ -1,0 +1,106 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }} - Мой блог о котиках{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-5">
+                    <h1 class="text-center text-primary mb-4">
+                        <i class="bi bi-question-circle me-3"></i>Помощь
+                    </h1>
+                    
+                    <div class="text-center mb-4">
+                        <h2 class="h3 text-success">Как пользоваться сайтом</h2>
+                        <p class="lead">Инструкции по навигации и использованию функций нашего блога о котиках</p>
+                    </div>
+                    
+                    <div class="accordion" id="helpAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#navHelp">
+                                    <i class="bi bi-compass me-2"></i>Навигация
+                                </button>
+                            </h2>
+                            <div id="navHelp" class="accordion-collapse collapse show" data-bs-parent="#helpAccordion">
+                                <div class="accordion-body">
+                                    <p>Используйте меню в верхней части страницы для перехода между разделами:</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <i class="bi bi-house-door text-primary me-2"></i><strong>Главная</strong> - возврат на главную страницу
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="bi bi-info-circle text-info me-2"></i><strong>О нас</strong> - информация о проекте
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="bi bi-question-circle text-warning me-2"></i><strong>Помощь</strong> - эта страница
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="bi bi-emoji-smile text-success me-2"></i><strong>Котики</strong> - милые котики для настроения
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contentHelp">
+                                    <i class="bi bi-file-text me-2"></i>Контент сайта
+                                </button>
+                            </h2>
+                            <div id="contentHelp" class="accordion-collapse collapse" data-bs-parent="#helpAccordion">
+                                <div class="accordion-body">
+                                    <p>На нашем сайте вы найдете:</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <i class="bi bi-camera text-success me-2"></i>Фотографии котиков
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="bi bi-lightbulb text-warning me-2"></i>Интересные факты о котиках
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="bi bi-heart text-danger me-2"></i>Советы по уходу
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#searchHelp">
+                                    <i class="bi bi-search me-2"></i>Поиск
+                                </button>
+                            </h2>
+                            <div id="searchHelp" class="accordion-collapse collapse" data-bs-parent="#helpAccordion">
+                                <div class="accordion-body">
+                                    <p>В будущем здесь будет добавлена функция поиска по контенту сайта.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#contactHelp">
+                                    <i class="bi bi-envelope me-2"></i>Обратная связь
+                                </button>
+                            </h2>
+                            <div id="contactHelp" class="accordion-collapse collapse" data-bs-parent="#helpAccordion">
+                                <div class="accordion-body">
+                                    <p>Если у вас есть вопросы или предложения, свяжитесь с нами через страницу "О нас".</p>
+                                    <div class="alert alert-info">
+                                        <i class="bi bi-info-circle me-2"></i>Мы всегда рады помочь и ответить на ваши вопросы!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

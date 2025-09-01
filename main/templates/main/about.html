@@ -1,0 +1,84 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }} - Мой блог о котиках{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-5">
+                    <h1 class="text-center text-primary mb-4">
+                        <i class="bi bi-info-circle me-3"></i>О нас
+                    </h1>
+                    
+                    <div class="text-center mb-4">
+                        <h2 class="h3 text-success">Мой блог о котиках</h2>
+                        <p class="lead">Добро пожаловать в мой уютный уголок в интернете, посвященный самым милым и забавным существам на планете - котикам! 🐱</p>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card bg-light border-0">
+                                <div class="card-body">
+                                    <h3 class="h5 text-primary">
+                                        <i class="bi bi-question-circle me-2"></i>Почему котики?
+                                    </h3>
+                                    <p class="mb-0">Котики - это не просто домашние животные, это настоящие члены семьи, которые приносят радость, уют и бесконечное количество смешных моментов в нашу жизнь.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card bg-light border-0">
+                                <div class="card-body">
+                                    <h3 class="h5 text-primary">
+                                        <i class="bi bi-star me-2"></i>Наша миссия
+                                    </h3>
+                                    <p class="mb-0">Мы хотим поделиться с вами всей красотой и очарованием кошачьего мира, а также помочь тем, кто только планирует завести пушистого друга.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h3 class="h5 text-primary">
+                            <i class="bi bi-list-check me-2"></i>Что вы найдете здесь
+                        </h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i class="bi bi-camera text-success me-2"></i>Фотографии милых котиков
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-book text-info me-2"></i>Забавные истории о котиках
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-lightbulb text-warning me-2"></i>Интересные факты о кошачьих
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-heart text-danger me-2"></i>Советы по уходу за котиками
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-play-circle text-primary me-2"></i>Видео с котиками
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-4 p-3 bg-primary text-white rounded-3">
+                        <h3 class="h5">
+                            <i class="bi bi-envelope me-2"></i>Свяжитесь с нами
+                        </h3>
+                        <p class="mb-2">Если у вас есть вопросы о котиках, интересные истории или фотографии ваших питомцев, не стесняйтесь обращаться к нам!</p>
+                        <p class="mb-1">
+                            <i class="bi bi-envelope me-2"></i>Email: kamenevvv@yandex.ru
+                        </p>
+                        <p class="mb-0">
+                            <i class="bi bi-telephone me-2"></i>Телефон: +7 (902) 505-74-91
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

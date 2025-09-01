@@ -1,0 +1,57 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }} - Мой блог о котиках{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="bg-primary text-white text-center py-5 rounded-3 mb-5">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-3">🐱 Добро пожаловать в мир котиков! 🐱</h1>
+        <p class="lead">Ваш уютный уголок, посвященный самым милым существам на планете</p>
+    </div>
+</div>
+
+<!-- Welcome Message -->
+<div class="bg-light text-center py-4 rounded-3 mb-5">
+    <div class="container">
+        <h2 class="h3 text-primary mb-2">🐱 Добро пожаловать в мир котиков! 🐱</h2>
+        <p class="text-muted mb-0">Здесь вы найдете все самое интересное о наших пушистых друзьях</p>
+    </div>
+</div>
+
+<!-- Features Section -->
+<section class="mb-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Что вас ждет на нашем сайте</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <div class="display-4 mb-3">📸</div>
+                        <h3 class="card-title h5">Фотографии котиков</h3>
+                        <p class="card-text text-muted">Красивые и милые фотографии котиков со всего мира</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <div class="display-4 mb-3">📖</div>
+                        <h3 class="card-title h5">Истории о котиках</h3>
+                        <p class="card-text text-muted">Забавные и трогательные истории о жизни котиков</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <div class="display-4 mb-3">💡</div>
+                        <h3 class="card-title h5">Советы по уходу</h3>
+                        <p class="card-text text-muted">Полезные советы по уходу за вашими пушистыми друзьями</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
