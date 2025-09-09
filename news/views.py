@@ -1,4 +1,10 @@
 from django.shortcuts import render
+from .models import News_post
 
-def home(request):
-	return render(request, 'news/news.html')
+def news_home(request):
+	news = News_post.objects.all()
+	context = {
+		'title': 'Новости',
+		'news': news
+	}
+	return render(request, 'news/news.html', context)

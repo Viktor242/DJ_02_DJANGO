@@ -1,11 +1,18 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}{{ title }} - Это вторая страница сайта к уроку 2
-
+{% block title %}
+<title>Новостная страница</title>
 {% endblock %}
 
 {% block content %}
-
-    <h2 style="color: white;">Что вас ждет на нашем сайте</h2>
-
+<h1>Новостная страница</h1>
+{% for new in news %}
+<div>
+    <h3> {{ new.title }} </h3>
+    <p> {{ new.short_description }} </p>
+    <div>{{ new.text|linebreaksbr }}</div>
+    <p><strong>Автор:</strong> {{ new.author }}</p>
+    <p><strong>Дата публикации:</strong> {{ new.pub_date|date:"d.m.Y H:i" }}</p>
+</div>
+{% endfor %}
 {% endblock %}
